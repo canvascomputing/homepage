@@ -5,23 +5,11 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#F1ECE2] to-white">
-        <div className="absolute inset-0 opacity-10">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3D709B" strokeWidth="0.5" opacity="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)"/>
-          </svg>
-        </div>
-        
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="text-center">
             <div className="flex justify-center mb-8">
               <div className="relative">
-                <div className="absolute inset-0 bg-[#3D709B] blur-3xl opacity-20 animate-pulse"></div>
-                <img src="/logo.png" alt="Canvas Computing" className="relative h-24 w-24 md:h-32 md:w-32" />
+                <img src="/logo.png" alt="Canvas Computing" className="h-24 w-24 md:h-32 md:w-32" />
               </div>
             </div>
             

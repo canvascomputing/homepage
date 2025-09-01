@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: "AI security, cybersecurity, democracy protection, malware analysis, threat detection, open-source security",
   authors: [{ name: siteConfig.founder.name }, { name: siteConfig.name }],
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
