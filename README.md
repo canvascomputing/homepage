@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Canvas Computing Website
 
-## Getting Started
+AI-powered security software for protecting democratic institutions.
 
-First, run the development server:
+## About
+
+Canvas Computing builds advanced AI-based security software to protect democratic institutions and safeguard digital infrastructure from emerging threats. We are the authors of [Malwi](https://github.com/canvascomputing/malwi), an open-source malware analysis and threat detection tool.
+
+## Technologies
+
+- Next.js 14
+- TypeScript  
+- Tailwind CSS
+- React 18
+
+## Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push this repository to GitHub
+2. Import the project to [Vercel](https://vercel.com/new)
+3. Deploy with default settings
 
-## Learn More
+Or use Vercel CLI:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Install Vercel CLI
+npm i -g vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Deploy
+vercel
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Features
 
-## Deploy on Vercel
+- **AI-Driven Detection**: Advanced machine learning models for real-time threat identification
+- **Democratic Protection**: Specialized tools for safeguarding electoral systems
+- **Rapid Response**: Automated threat mitigation protocols
+- **Open Source**: Commitment to transparent security solutions through projects like Malwi
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Malwi Repository](https://github.com/canvascomputing/malwi)
+- [Canvas Computing GitHub](https://github.com/canvascomputing)
+
+## License
+
+© 2024 Canvas Computing. All rights reserved.
