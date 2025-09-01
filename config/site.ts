@@ -41,13 +41,21 @@ export interface SiteConfig {
         description: string;
       }>;
     };
-    security: {
+    malwi: {
       title: string;
-      solutions: Array<{
+      subtitle?: string;
+      description: string;
+      githubUrl: string;
+      features: Array<{
         title: string;
         description: string;
-        icon: string;
       }>;
+      stats: {
+        accuracy: string;
+        samples: string;
+        f1Score: string;
+        precision: string;
+      };
     };
     contact: {
       title: string;

@@ -4,7 +4,8 @@
       "Bash(npx create-next-app:*)",
       "Bash(npm run dev:*)",
       "Bash(npm install)",
-      "Read(//Users/mav/**)"
+      "Read(//Users/mav/**)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

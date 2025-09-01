@@ -63,9 +63,6 @@ export default function Home() {
                 {siteConfig.content.malwi.title}
               </h2>
             </div>
-            <p className="text-xl text-[#3D709B] font-medium mb-6">
-              {siteConfig.content.malwi.subtitle}
-            </p>
             <p className="text-lg text-[#666666] max-w-4xl mx-auto mb-8">
               {siteConfig.content.malwi.description}
             </p>
