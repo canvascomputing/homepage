@@ -225,7 +225,7 @@ export const siteConfig: SiteConfig = {
       email: "m@schirrmacher.io",
       secondaryContact: {
         text: "Zweiter Kontaktweg",
-        url: "https://www.mein.online-impressum.de/canvascomputing/"
+        url: "https://www.mein.online-impressum.de/canvascomputing/#Zweiter_Kontaktweg"
       }
     },
     
