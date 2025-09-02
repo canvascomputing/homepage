@@ -32,6 +32,10 @@ export interface SiteConfig {
     hero: {
       title: string;
       subtitle: string;
+      buttons: {
+        github: string;
+        huggingface: string;
+      };
     };
     mission: {
       title: string;
@@ -46,6 +50,7 @@ export interface SiteConfig {
       subtitle?: string;
       description: string;
       githubUrl: string;
+      buttonText: string;
       features: Array<{
         title: string;
         description: string;
@@ -68,6 +73,31 @@ export interface SiteConfig {
     footer: {
       copyright: string;
       tagline: string;
+    };
+    impressum: {
+      title: string;
+      company: string;
+      address: {
+        line1: string;
+        line2: string;
+        line3: string;
+      };
+      email: string;
+      secondaryContact: {
+        text: string;
+        url: string;
+      };
+    };
+    // Section titles and labels
+    sections: {
+      about: string;
+      impressum: string;
+    };
+    // Alt texts and labels
+    labels: {
+      logoAlt: string;
+      malwiLogoAlt: string;
+      huggingFaceAlt: string;
     };
   };
 }
@@ -96,11 +126,22 @@ export const siteConfig: SiteConfig = {
     title: "Founder & Lead Developer",
     bio: "Leading Canvas Computing's mission from Europe to develop AI-powered security solutions that protect freedom worldwide. Committed to open-source development and transparent security practices with a focus on European values of freedom."
   },
+
+  // Alt texts and labels
+  labels: {
+    logoAlt: "Canvas Computing",
+    malwiLogoAlt: "malwi Logo",
+    huggingFaceAlt: "Hugging Face"
+  },
   
   content: {
     hero: {
       title: "Security for Everyone",
-      subtitle: "Building AI-based security software to protect our freedom"
+      subtitle: "Building AI-based security software to protect our freedom",
+      buttons: {
+        github: "View on GitHub",
+        huggingface: "Hugging Face"
+      }
     },
     
     mission: {
@@ -128,6 +169,7 @@ export const siteConfig: SiteConfig = {
       title: "malwi - AI Python Malware Scanner",
       description: "malwi is an AI-powered Python malware scanner designed to detect malicious code in software projects, helping developers proactively identify potential security risks in their dependencies.",
       githubUrl: "https://github.com/canvascomputing/malwi",
+      buttonText: "View malwi on GitHub",
       features: [
         {
           title: "🛡️ AI-Powered Python Malware Detection",
@@ -170,6 +212,34 @@ export const siteConfig: SiteConfig = {
     footer: {
       copyright: "© 2025 Canvas Computing - European Hackers",
       tagline: "Building AI-based security software to protect our freedom"
+    },
+    
+    impressum: {
+      title: "Impressum",
+      company: "canvascomputing - Marvin Schirrmacher",
+      address: {
+        line1: "c/o Online-Impressum.de #36983",
+        line2: "Europaring 90",
+        line3: "53757 Sankt Augustin"
+      },
+      email: "m@schirrmacher.io",
+      secondaryContact: {
+        text: "Zweiter Kontaktweg",
+        url: "https://www.mein.online-impressum.de/canvascomputing/"
+      }
+    },
+    
+    // Section titles and labels
+    sections: {
+      about: "About Us",
+      impressum: "Impressum"
+    },
+    
+    // Alt texts and labels
+    labels: {
+      logoAlt: "Canvas Computing",
+      malwiLogoAlt: "malwi Logo",
+      huggingFaceAlt: "Hugging Face"
     }
   }
 };
