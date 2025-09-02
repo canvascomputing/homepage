@@ -26,6 +26,13 @@ export interface SiteConfig {
     title: string;
     bio: string;
   };
+
+  // Alt texts and labels
+  labels: {
+    logoAlt: string;
+    malwiLogoAlt: string;
+    huggingFaceAlt: string;
+  };
   
   // Content
   content: {
