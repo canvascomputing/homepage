@@ -144,7 +144,7 @@ export const siteConfig: SiteConfig = {
   content: {
     hero: {
       title: "Security for Everyone",
-      subtitle: "Building AI-based security software to protect our freedom",
+      subtitle: "We build the future of security tooling to protect our freedom",
       buttons: {
         github: "View on GitHub",
         huggingface: "Hugging Face"
@@ -154,7 +154,7 @@ export const siteConfig: SiteConfig = {
     mission: {
       title: "Our Mission",
       description: [
-        "Canvas Computing is a European project building open-source AI security tools. We believe security software should be transparent and accessible to everyone. We focus on developing practical tools that help developers and organizations protect their systems from emerging threats. Everything we build is open-source and freely available."
+        "Canvas Computing is a European group of hackers building open-source AI security tools. We believe security software should be transparent and accessible to everyone. We focus on developing practical tools that help developers and organizations protect their systems from emerging threats."
       ],
       features: [
         {
@@ -209,7 +209,7 @@ export const siteConfig: SiteConfig = {
     
     contact: {
       title: "Get Involved",
-      description: "Join us in building a more secure digital future for free societies. Contribute to our open-source projects or reach out to discuss collaboration opportunities.",
+      description: "Join us in building a more secure future. Contribute to our open-source projects or reach out to discuss collaboration.",
       buttons: {
         github: "Contribute on GitHub",
         huggingface: "View Models"
