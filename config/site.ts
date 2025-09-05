@@ -43,6 +43,7 @@ export interface SiteConfig {
         github: string;
         huggingface: string;
       };
+      threatLandscape: string;
     };
     mission: {
       title: string;
@@ -148,7 +149,8 @@ export const siteConfig: SiteConfig = {
       buttons: {
         github: "View on GitHub",
         huggingface: "Hugging Face"
-      }
+      },
+      threatLandscape: "The modern threat landscape is shaped by increasingly sophisticated attacks on the software supply chain. Malicious actors exploit the trust placed in open-source code — planting backdoors, stealing data, and deploying destructive payloads. These attacks don't just compromise individual systems; they threaten critical infrastructure and erode digital sovereignty."
     },
     
     mission: {

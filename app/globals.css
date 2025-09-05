@@ -14,6 +14,51 @@
   --border: var(--canvas-dark);
 }
 
+/* Performance optimizations */
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimize layout containment */
+header {
+  contain: layout style;
+  will-change: transform;
+}
+
+section {
+  contain: layout style paint;
+}
+
+/* Optimize image rendering */
+img {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 100px;
+}
+
+/* Reduce reflow on hover states */
+a, button {
+  will-change: transform, background-color;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* GPU acceleration for animations */
+.transition-colors,
+.transition-all {
+  transform: translateZ(0);
+  will-change: transform, opacity, background-color;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -55,5 +100,17 @@ body {
 
 .canvas-button:hover {
   background: var(--canvas-dark);
-  transform: translateY(-2px);
+  transform: translate3d(0, -2px, 0);
+}
+
+/* Prevent layout shifts during resize */
+@media screen {
+  .fixed {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+  
+  .max-w-7xl {
+    contain: layout style;
+  }
 }
