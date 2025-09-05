@@ -46,17 +46,15 @@ img {
 }
 
 /* Reduce reflow on hover states */
-a, button {
+a:hover, button:hover {
   will-change: transform, background-color;
-  transform: translateZ(0);
-  backface-visibility: hidden;
 }
 
 /* GPU acceleration for animations */
 .transition-colors,
 .transition-all {
   transform: translateZ(0);
-  will-change: transform, opacity, background-color;
+  backface-visibility: hidden;
 }
 
 @theme inline {
